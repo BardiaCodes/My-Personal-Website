@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Link() {
+export default function Link({ title, type, link }) {
   return (
-    <>
-      <a href="url">link text</a>
-    </>
+    <div>
+      <a href="url">{title}</a>
+    </div>
   );
 }

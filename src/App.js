@@ -5,7 +5,7 @@ import Spacer from "./components/Spacer";
 import Link from "./components/Link";
 
 function App() {
-  let links = [{ title: "External Links", url: "google.com" }];
+  let links = [{ title: "Socials" }, { title: "Post 1", url: "google.com" }];
 
   return (
     <div className="App">
@@ -18,9 +18,11 @@ function App() {
       />
       <Subheader variant="small">Me</Subheader>
       <Spacer space="20px" />
-      {links.map((link) => (
-        <Link />
-      ))}
+      <div>
+        {links.map((link) => (
+          <Link title={link.title} />
+        ))}
+      </div>
     </div>
   );
 }
